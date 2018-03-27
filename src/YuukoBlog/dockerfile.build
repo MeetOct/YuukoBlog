@@ -1,6 +1,6 @@
 ﻿#https://hub.docker.com/r/microsoft/dotnet/
 
-FROM microsoft/aspnetcore:2.0
+FROM microsoft/aspnetcore-build:2.0
 
 RUN mkdir /package
 VOLUME /appdata
