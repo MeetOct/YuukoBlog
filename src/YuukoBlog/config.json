@@ -4,12 +4,12 @@
   "Account": "root",
   "Password": "123456",
   "Site": "Meet At Oct.",
-  "Description": "Amamiya Yuuko's ebullient future",
+  "Description": "Life is Short,Enjoy Yourself.",
   "Disqus": "cheerego",
   "DefaultTemplate": "Default",
   "Database": {
     "Type": "SQLite",
-    "ConnectionString": "Data source=MeetOct.db"
+    "ConnectionString": "Data source=sqlite/MeetOct.db"
   },
   "BlogRoll": {
     "GitHub": "MeetOct",
