@@ -1,0 +1,13 @@
+﻿#https://hub.docker.com/r/microsoft/dotnet/
+
+FROM microsoft/aspnetcore:2.0
+
+RUN mkdir /package
+VOLUME /appdata
+Copy . /package
+
+RUN mv -f /package/src/YuukoBlog/publish.sh /package/ \
+&& chmod +x /package/publish.sh
+WORKDIR /package
+
+CMD ["/bin/bash","publish.sh"]

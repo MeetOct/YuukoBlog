@@ -3,7 +3,7 @@
 FROM microsoft/aspnetcore:2.0
 WORKDIR /dotnetapp
 Copy . /dotnetapp
-VOLUME /dotnetapp/sqlite
+VOLUME /dotnetapp/dbdata
 ENV ASPNETCORE_URLS http://*:5000
 EXPOSE 5000
 ENTRYPOINT ["dotnet", "YuukoBlog.dll"]
