@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="wwwroot\**\*;Views\**\*;Areas\**\Views;Localization\**\*">
+    <None Update="wwwroot\**\*;Views\**\*;Areas\**\Views;Localization\**\*;dockerfile.deploy">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
   </ItemGroup>
