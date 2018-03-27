@@ -20,7 +20,12 @@ namespace YuukoBlog
 
             if (Configuration["Database:Type"] == "SQLite")
             {
-                services.AddDbContext<BlogContext>(x => x.UseSqlite(Configuration["Database:ConnectionString"]));
+                var connStr = $"Data source={Configuration["Database:DBFile"]};";
+                if (connStr.IndexOf('\\') >= 0)
+                {
+                    connStr = connStr.Replace("/", "\\");
+                }
+                services.AddDbContext<BlogContext>(x => x.UseSqlite(connStr));
             }
             else if (Configuration["Database:Type"] == "MySQL")
             {

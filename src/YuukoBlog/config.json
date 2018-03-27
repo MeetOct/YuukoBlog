@@ -9,7 +9,7 @@
   "DefaultTemplate": "Default",
   "Database": {
     "Type": "SQLite",
-    "ConnectionString": "Data source=sqlite/MeetOct.db"
+    "DBFile": "sqlite/MeetOct.db"
   },
   "BlogRoll": {
     "GitHub": "MeetOct",
